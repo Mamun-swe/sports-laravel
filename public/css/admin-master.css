@@ -1,0 +1,110 @@
+/* Top navbar */
+
+.custom-nav {
+    background: #ffffff;
+}
+
+.custom-nav i {
+    font-size: 22px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.break {
+    height: 70px;
+}
+
+/* Side Menu */
+
+.side-menu {
+    width: 250px;
+    height: 100vh;
+    background: #ffffff;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.side-menu .close-icon {
+    font-size: 22px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.side-menu .links a {
+    text-align: left;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 15px;
+    transition: 0.3s;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #dfdfdd;
+}
+
+.side-menu .links a:hover {
+    color: #ffffff;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    background: rgb(131, 145, 255);
+    background: linear-gradient( 90deg, rgba(131, 145, 255, 1) 0%, rgba(102, 184, 252, 1) 68%);
+}
+
+.unique-btn {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    border: 0;
+    border-radius: 3px;
+    background: rgb(131, 145, 255);
+    background: linear-gradient( 90deg, rgba(131, 145, 255, 1) 0%, rgba(102, 184, 252, 1) 68%);
+}
+
+.unique-btn:hover {
+    color: #ffffff;
+}
+
+/* Banner */
+
+.banner img {
+    width: 150px;
+    max-height: 150px;
+}
+
+/* Team */
+
+.teams img {
+    width: 150px;
+    max-height: 80px;
+}
+
+.new-team .form-control {
+    min-height: 43px;
+}
+
+.new-team .btn {
+    height: 43px;
+}
+
+.edit-team .form-control {
+    min-height: 43px;
+}
+
+.edit-team .btn {
+    height: 43px;
+}
+
+/* About & Contact */
+.about-contact p{
+    font-size: 15px;
+    line-height: 1.8rem;
+}
+
+.add-about .form-control{
+    min-height: 45px;
+}
+.add-about .btn{
+    height: 40px;
+}

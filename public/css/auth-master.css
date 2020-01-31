@@ -1,0 +1,43 @@
+.flex-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-column {
+    -ms-flex-direction: column !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    flex-direction: column !important;
+}
+
+/* User login */
+
+.auth {
+    width: 100%;
+    height: 100vh;
+}
+
+.auth .card .card-header {
+    background: none;
+    border-bottom: 2px solid #dfdfdf;
+}
+
+@media(max-width: 576px) {
+    .auth .card {
+        width: 93vw;
+    }
+}
+
+@media(min-width: 576px) {
+    .auth .card {
+        width: 550px;
+    }
+}
