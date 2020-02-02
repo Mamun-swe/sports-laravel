@@ -36,4 +36,5 @@ Route::get('/about', 'ClientSideController@about');
 Route::get('/join-with-us', 'ClientSideController@joinWithUs');
 
 
-Auth::routes(['register' => false]);
+// Auth::routes(['register' => false]);
+Auth::routes();

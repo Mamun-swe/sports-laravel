@@ -9,7 +9,7 @@ TiTAN ESPORTS | Event
         @if(isset($details))
         <div class="row">
             <div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
-                <img src="/blogs/{{$details->image}}" class="img-fluid">
+                <img src="{{url('')}}/blogs/{{$details->image}}" class="img-fluid">
             </div>
             <div class="col-12 col-lg-6 pl-lg-5">
                 <h5 class="mb-3 mb-lg-4">{{$details->blog_title}}</h5>

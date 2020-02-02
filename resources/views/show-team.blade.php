@@ -9,7 +9,7 @@ TiTAN ESPORTS | Team
         @if(isset($details))
         <div class="row">
             <div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
-                <img src="/teams/{{$details->image}}" class="img-fluid">
+                <img src="{{url('')}}/teams/{{$details->image}}" class="img-fluid">
             </div>
             <div class="col-12 col-lg-6 pl-lg-5">
                 <h5 class="mb-3 mb-lg-4">{{$details->name}}</h5>

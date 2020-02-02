@@ -7,7 +7,7 @@
             <div class="col-12 col-lg-6 mb-4 mb-lg-0">
                 <div class="card border-0">
                     <div class="card-body text-center">
-                        <img class="img-fluid" src="/blogs/{{$data->image}}">
+                        <img class="img-fluid" src="{{url('')}}/blogs/{{$data->image}}">
                     </div>
                 </div>
             </div>

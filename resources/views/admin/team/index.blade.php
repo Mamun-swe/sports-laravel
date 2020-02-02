@@ -50,7 +50,7 @@
                                 <p class="text-capitalize">{{$row->name}}</p>
                             </td>
                             <td>
-                                <img src="/teams/{{$row->image}}">
+                                <img src="{{url('')}}/teams/{{$row->image}}">
                             </td>
                             <td>
                                 <p class="text-capitalize">{{$row->about}}</p>

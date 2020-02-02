@@ -5,7 +5,7 @@
     <div class="container py-3">
         <div class="row">
             <div class="col-12 mb-2">
-                <h5>New News</h5>
+                <h5>New Event</h5>
             </div>
             <div class="col-12">
                 @if(count($errors) > 0)

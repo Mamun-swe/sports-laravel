@@ -54,7 +54,7 @@ TiTAN ESPORTS
             <div class="col-12 m-auto">
                 @foreach($streaming as $stream)
                 <div class="strim-box">
-                    <img src="/stream-files/{{$stream->image}}" class="img-fluid" alt="no image found">
+                <img src="{{url('')}}/stream-files/{{$stream->image}}" class="img-fluid" alt="no image found">
                     <div class="strim-overlay">
                         <div class="flex-center flex-column">
                             <h4 class="mb-3 text-capitalize">{{$stream->title}}</h4>
@@ -89,7 +89,7 @@ TiTAN ESPORTS
             <div class="col-12 col-sm-6 col-lg-4 py-3">
                 <a href="{{url('show-team/'.$team->id)}}">
                     <div class="team-box">
-                        <img src="/teams/{{$team->image}}" class="img-fluid">
+                        <img src="{{url('')}}/teams/{{$team->image}}" class="img-fluid">
                         <div class="team-overlay">
                             <div class="flex-center flex-column">
                                 <img src="{{asset('icon/search.svg')}}" class="icon">
@@ -111,7 +111,7 @@ TiTAN ESPORTS
     <div class="container">
         <div class="row">
             <div class="col-12 text-center pb-4">
-                <h1 class="mb-5">Latest News</h1>
+                <h1 class="mb-5">Events</h1>
             </div>
         </div>
         <div class="row">
@@ -119,10 +119,10 @@ TiTAN ESPORTS
             @foreach($events as $event)
             <div class="col-12 col-md-6 col-lg-4 py-3">
                 <div class="card rounded-0 border-0 news-card shadow">
-                    <img src="/blogs/{{$event->image}}" class="card-img-top rounded-0 img-fluid">
+                <img src="{{url('')}}/blogs/{{$event->image}}" class="card-img-top rounded-0 img-fluid">
                     <div class="card-body py-4">
                         <h6 class="mb-3 text-capitalize">{{$event->blog_title}}</h6>
-                        <p>{{$event->blog_content}}</p>
+                        <p>{{ \Illuminate\Support\Str::words($event->blog_content, 20, '...') }}</p>
                         <div class="text-right">
                             <a href="{{url('event/'.$event->id)}}" class="btn unique-btn-2 shadow-none">Read</a>
                         </div>

@@ -54,7 +54,7 @@
                                 <p class="text-capitalize">{{$row->title}}</p>
                             </td>
                             <td class="text-center">
-                                <img src="/stream-files/{{$row->image}}">
+                                <img src="{{url('')}}/stream-files/{{$row->image}}">
                             </td>
                             <td class="text-center">
                                 <p class="text-capitalize">{{$row->start_time}}</p>

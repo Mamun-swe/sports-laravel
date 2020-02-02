@@ -21,7 +21,7 @@ TiTAN ESPORTS | Team
             <div class="col-12 col-md-6 col-lg-4 py-3">
                 <a href="{{url('show-team/'.$row->id)}}">
                     <div class="card rounded-0 border-0 shadow team-card">
-                        <img src="/teams/{{$row->image}}" class="rounded-0 img-fluid">
+                        <img src="{{url('')}}/teams/{{$row->image}}" class="rounded-0 img-fluid">
                         <div class="overlay">
                             <div class="flex-center flex-column">
                                 <img src="{{asset('icon/search.svg')}}" class="icon">

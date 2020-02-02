@@ -45,7 +45,7 @@
             <div class="links">
                 <a href="{{ url('/home') }}" class="btn btn-block rounded-0 shadow-none">Dashboard</a>
                 <a href="{{ url('admin/team') }}" class="btn btn-block rounded-0 shadow-none">Team</a>
-                <a href="{{ url('admin/blog') }}" class="btn btn-block rounded-0 shadow-none">News</a>
+                <a href="{{ url('admin/blog') }}" class="btn btn-block rounded-0 shadow-none">Events</a>
                 <a href="{{ url('admin/streaming') }}" class="btn btn-block rounded-0 shadow-none">Streaming</a>
                 <a href="{{ url('admin/about-contact') }}" class="btn btn-block rounded-0 shadow-none">About-Contact</a>
                 <a href="{{ url('/logout') }}" class="btn btn-block rounded-0 shadow-none">Logout</a>

@@ -47,13 +47,13 @@
                                 <p class="text-capitalize">{{$row->id}}</p>
                             </td>
                             <td class="text-center">
-                                <img src="/blogs/{{$row->image}}">
+                                <img src="{{url('')}}/blogs/{{$row->image}}">
                             </td>
                             <td>
                                 <p class="text-capitalize">{{$row->blog_title}}</p>
                             </td>
                             <td>
-                                <p class="text-capitalize">{{$row->blog_content}}</p>
+                                <p class="text-capitalize">{{ \Illuminate\Support\Str::words($row->blog_content, 35, '...') }}</p>
                             </td>
                             <td class="text-center">
                                 <a href="{{route('blog.edit',$row->id)}}"

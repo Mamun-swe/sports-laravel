@@ -19,10 +19,10 @@ TiTAN ESPORTS | Events
             @foreach($data as $row)
             <div class="col-12 col-md-6 col-lg-4 py-3">
                 <div class="card rounded-0 border-0 news-card shadow">
-                    <img src="/blogs/{{$row->image}}" class="card-img-top rounded-0 img-fluid">
+                    <img src="{{url('')}}/blogs/{{$row->image}}" class="card-img-top rounded-0 img-fluid">
                     <div class="card-body py-4">
                         <h6 class="mb-3 text-capitalize">{{$row->blog_title}}</h6>
-                        <p>{{$row->blog_content}}</p>
+                        <p>{{ \Illuminate\Support\Str::words($row->blog_content, 20, '...') }}</p>
                         <div class="text-right">
                             <a href="{{url('event/'.$row->id)}}" class="btn unique-btn-2 shadow-none">Read</a>
                         </div>

@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 text-center">
-                <img src="/streaming/{{$data->image}}" class="img-fluid w-100">
+                <img src="{{url('')}}/streaming/{{$data->image}}" class="img-fluid w-100">
             </div>
         </div>
     </div>
